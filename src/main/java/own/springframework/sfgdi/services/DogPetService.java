@@ -3,11 +3,11 @@ package own.springframework.sfgdi.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile("EN")
-@Service("i18nService")
-public class I18nEnglishGreeting implements GreetingService{
+@Profile("dog")
+@Service("pet")
+public class DogPetService implements PetService{
     @Override
-    public String sayGreeting() {
-        return "Hello World - EN";
+    public String getPetType(){
+        return "Dogs are the best!";
     }
 }
